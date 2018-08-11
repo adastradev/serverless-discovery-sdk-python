@@ -13,10 +13,7 @@ python3 -m pip install serverless-discovery-sdk
 ## Usage
 ### Python
 ```python
-import serverless_discovery_sdk
-
-var DiscoverySdk = require('@adastradev/serverless-discovery-sdk').DiscoverySdk;
-var sdk = new DiscoverySdk('https://abcdefghij.execute-api.us-east-1.amazonaws.com/prod', 'us-east-1');
-
-var endpoints = await sdk.lookupService('my-service-name');
+from serverless_discovery_sdk import DiscoverySdk
+sdk = DiscoverySdk('https://abcdefghij.execute-api.us-east-1.amazonaws.com/prod')
+endpoints = sdk.lookupService('my-service', 'dev')
 ```
