@@ -1,4 +1,4 @@
-from DiscoveryServiceApi import DiscoveryServiceApi
+from .DiscoveryServiceApi import DiscoveryServiceApi
 
 class DiscoverySdk:
 
