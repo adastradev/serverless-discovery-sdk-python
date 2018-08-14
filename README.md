@@ -1,4 +1,4 @@
-# serverless-discovery-sdk-python
+# serverless-discovery-sdk
 
 *The last serverless micro-service you'll ever wonder how to find*
 
@@ -13,7 +13,7 @@ python3 -m pip install serverless-discovery-sdk
 ## Usage
 ### Python
 ```python
-from serverless_discovery_sdk import DiscoverySdk
+from serverless_discovery_sdk.DiscoverySdk import DiscoverySdk
 sdk = DiscoverySdk('https://abcdefghij.execute-api.us-east-1.amazonaws.com/prod')
 endpoints = sdk.lookupService('my-service', 'dev')
 ```
