@@ -1,5 +1,6 @@
 # serverless-discovery-sdk
 
+![PyPI](https://img.shields.io/pypi/v/serverless-discovery-sdk.svg)
 [![GitHub license](https://img.shields.io/github/license/adastradev/serverless-discovery-sdk-python.svg)](https://github.com/adastradev/serverless-discovery-sdk-python/blob/master/LICENSE.md)
 
 *The last serverless micro-service you'll ever wonder how to find*
