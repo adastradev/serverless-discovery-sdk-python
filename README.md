@@ -1,5 +1,7 @@
 # serverless-discovery-sdk
 
+[![GitHub license](https://img.shields.io/github/license/adastradev/serverless-discovery-sdk-python.svg)](https://github.com/adastradev/serverless-discovery-sdk-python/blob/master/LICENSE.md)
+
 *The last serverless micro-service you'll ever wonder how to find*
 
 The AWS Serverless Discovery SDK interacts with a discovery microservice to discover endpoints for micro-services written for a serverless architecture. This is similar to clustered services such as [Consul](https://www.consul.io/intro/index.html) or [ZooKeeper](https://zookeeper.apache.org/), but without the concept of instances or nodes that must be monitored for online state. This library is designed to support use both on the server side (for service-to-service lookups) and on the browser/client side.
