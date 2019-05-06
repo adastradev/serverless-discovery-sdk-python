@@ -8,9 +8,9 @@ class DiscoverySdk:
         self.defaultStageName = defaultStageName
         self.api = DiscoveryServiceApi(serviceEndpointUri, region, { 'type': 'None' })
 
-    def lookupService(self, ServiceName, StageName = ''):
+    def lookupService(self, serviceName, stageName = '', version = '', externalID = ''):
         if (len(StageName) == 0):
             StageName = self.defaultStageName
 
-        response = self.api.lookupService(ServiceName, StageName)
+        response = self.api.lookupService(serviceName, stageName, version, externalID)
         return response

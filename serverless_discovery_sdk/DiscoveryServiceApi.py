@@ -10,9 +10,9 @@ class DiscoveryServiceApi:
         self.region = region
         self.defaultStageName = defaultStageName
 
-    def lookupService(self, ServiceName, StageName = ''):
+    def lookupService(self, serviceName, stageName = '', version = '', externalID = ''):
         url = '%s/catalog/service' % (self.serviceEndpointUri)
-        response = self.session.get(url, params = { 'ServiceName': ServiceName, 'StageName': StageName })
+        response = self.session.get(url, params = { 'ServiceName': serviceName, 'StageName': stageName, 'Version': version, 'ExternalID': externalID })
         body = response.json()
         if response.status_code == 200:
             return list(map(lambda service: service['ServiceURL'], body))
