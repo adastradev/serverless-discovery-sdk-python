@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="serverless-discovery-sdk",
-    version="0.1.0",
+    version="1.0.0",
     author="Andrew Regier",
     author_email="aregier@regiernet.com",
     description="Serverless Service Discovery SDK",
